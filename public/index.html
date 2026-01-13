@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSim Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page; // Redirects to the given page
+        }
+
+        // Smooth scroll to "About Us" section
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        .colour{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-color:light white;
+            background-color: #292929;
+        }
+        .size{
+            
+            height: 10vh;
+            width: 7vw;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  colour">
+    
+      <a class="navbar-brand ml-2" href="#">
+        
+        <img
+          src="https://www.freepnglogos.com/uploads/hacker-png/hacker-interpol-arrests-suspected-anonymous-hackers-motley-5.png"
+          class="navbar-image size"
+          alt="" 
+        /> Cyber Attack simulater
+        
+        
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+           
+          <nav>
+            <ul>
+                <li><a href="/simulate">Simulations</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('about')">About Us</a></li>
+            </ul>
+        </nav>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    
+    
+    <section class="hero">
+        <h1>Defend. <span>Detect. </span>Defeat. </h1>
+        <button class="explore-btn" onclick="window.location.href='/simulate'">Explore Simulations</button>
+        
+        <!-- Icon Container -->
+        <div class="icons">
+            <img src="images/code-icon.webp" alt="Code" class="code">
+            <img src="images/curly-braces-icon.webp" alt="Curly Braces" class="curly">
+            <img src="images/iot-icon.webp" alt="Hacker Icon" class="hacker">
+            <img src="images/incognito-icon.webp" alt="Community Icon" class="community">
+        </div>
+        
+        <!-- Ninja Character -->
+        <img src="images/ninja-potrait.webp" alt="Ninja Character" class="ninja">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2 class="about-title">About Us</h2>
+        <p>
+            Cyber Attack Simulater  is a cutting-edge platform designed to help users master 
+            cybersecurity through interactive simulations and real-world challenges.
+        </p>
+    </section>
+
+</body>
+</html>
